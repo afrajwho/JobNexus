@@ -7,11 +7,11 @@ import {
   postJob,
 } from "../controllers/job.controller.js";
 
-const router = Router();
+const jobRoute = Router();
 
-router.post("/post", isAuthenticated, postJob);
-router.get("/get", isAuthenticated, getAllJobs);
-router.get("/getadminjobs", isAuthenticated, getAdminJobs);
-router.get("/get/:id", isAuthenticated, getJobById);
+jobRoute.post("/post", isAuthenticated, postJob);
+jobRoute.get("/get", isAuthenticated, getAllJobs);
+jobRoute.get("/getadminjobs", isAuthenticated, getAdminJobs);
+jobRoute.get("/get/:id", isAuthenticated, getJobById);
 
-export default router;
+export default jobRoute;
