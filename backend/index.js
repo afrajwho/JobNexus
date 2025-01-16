@@ -17,10 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin: process.env.FRONTEND_URL,
+    origin: 'https://job-nexus-seven.vercel.app',
     credentials: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    allowedHeaders: "Content-Type,Authorization",
 };
 
 app.use(cors(corsOptions));
