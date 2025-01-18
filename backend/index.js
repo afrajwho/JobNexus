@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "https://jobnexus-89vk.onrender.com",
+  origin: "https://jobnexus-l0no.onrender.com",
   credentials: true,
 };
 app.use(cors(corsOptions));
