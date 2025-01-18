@@ -3,12 +3,12 @@ import { login, logout, register, updateProfile } from "../controllers/user.cont
 import isAuthenticated from "../middlewares/isAuthenticated.js";
 import { singleUpload } from "../middlewares/mutler.js";
  
-const userRoute = express.Router();
+const router = express.Router();
 
-userRoute.route("/register").post(singleUpload,register);
-userRoute.route("/login").post(login);
-userRoute.route("/logout").get(logout);
-userRoute.route("/profile/update").post(isAuthenticated,singleUpload,updateProfile);
+router.route("/register").post(singleUpload,register);
+router.route("/login").post(login);
+router.route("/logout").get(logout);
+router.route("/profile/update").post(isAuthenticated,singleUpload,updateProfile);
 
-export default userRoute;
+export default router;
 
