@@ -1,8 +1,8 @@
 export const USER_API_END_POINT =
-  "https://job-nexus-seven.vercel.app/api/v1/user";
+  "https://jobnexus-l0no.onrender.com/api/v1/user";
 export const JOB_API_END_POINT =
-  "https://job-nexus-seven.vercel.app/api/v1/job";
+  "https://jobnexus-l0no.onrender.com/api/v1/job";
 export const APPLICATION_API_END_POINT =
-  "https://job-nexus-seven.vercel.app/api/v1/application";
+  "https://jobnexus-l0no.onrender.com/api/v1/application";
 export const COMPANY_API_END_POINT =
-  "https://job-nexus-seven.vercel.app/api/v1/company";
+  "https://jobnexus-l0no.onrender.com/api/v1/company";

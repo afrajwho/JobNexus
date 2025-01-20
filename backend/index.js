@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "https://job-nexus-seven.vercel.app",
+  origin: "https://jobnexus-l0no.onrender.com",
   credentials: true,
 };
 app.use(cors(corsOptions));
